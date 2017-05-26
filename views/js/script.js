@@ -7,7 +7,8 @@
             e.preventDefault();
             form.classList.add('loading')
             var name = form.elements[0].value.trim();
-            var message = form.elements[1].value ? form.elements[1].value.trim() : '';
+            var email = form.elements[1].value.trim();
+            var message = form.elements[2].value ? form.elements[1].value.trim() : '';
 
             var xmlHttp = new XMLHttpRequest();
             xmlHttp.open('POST', '/contact', true) 
@@ -25,7 +26,7 @@
                 }
             }
 
-            var data = JSON.stringify({name: name, message: message}); 
+            var data = JSON.stringify({name: name, email: email, message: message}); 
 
             xmlHttp.send(data);
         });
