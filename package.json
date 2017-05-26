@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node ."
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "engines": {
+    "node": "7.10.0"
+  },
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0"
+  }
+}
