@@ -68,6 +68,8 @@ const routes = [
         }
         console.log("Message %s sent: %s", info.messageId, info.response);
       });
+
+      return reply().status(200);
     }
   }
 ];
