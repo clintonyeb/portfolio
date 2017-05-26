@@ -18,10 +18,8 @@
                 if (xmlHttp.readyState != 4) return;
                 form.classList.remove('loading');
                 if (xmlHttp.status == 200) {
-                    console.log('message sent');
                     form.classList.add('success');
                 }else {
-                    console.log('sending failed');
                     form.classList.add('error');                    
                 }
             }
