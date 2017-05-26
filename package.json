@@ -4,10 +4,11 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node ."
+    "dev": "nodemon -e js,html,css server.js"
   },
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "nodemon": "^1.11.0"
   },
   "engines": {
     "node": "7.10.0"
