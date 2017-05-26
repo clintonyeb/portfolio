@@ -59,7 +59,7 @@ const routes = [
         from: '<clinton@tinglingcode.com>',
         to: 'clintonmethis@gmail.com',
         subject: "Contact - Website",
-        text: `Message from ${data.name},\nEmail: ${data.email} \nMessage: ${data.message}`
+        text: `Message from ${data.name}, \nMessage: ${data.message}`
       };
 
       mailer.sendMail(mail, (err, info) => {

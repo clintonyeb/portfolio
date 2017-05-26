@@ -6,9 +6,9 @@
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             form.classList.add('loading')
-            var name = form.elements[0].value.trim();
-            var email = form.elements[1].value.trim();
-            var message = form.elements[2].value ? form.elements[2].value.trim() : 'self - No message';
+            var name = form.elements.name.value.trim();
+            // var email = form.elements[1].value.trim();
+            var message = form.elements.message.value ? form.elements.message.value.trim() : 'self - No message';
 
             var xmlHttp = new XMLHttpRequest();
             xmlHttp.open('POST', '/contact', true) 
@@ -24,7 +24,7 @@
                 }
             }
 
-            var data = JSON.stringify({name: name, email: email, message: message}); 
+            var data = JSON.stringify({name: name, message: message}); 
 
             xmlHttp.send(data);
         });
