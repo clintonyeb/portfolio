@@ -2,6 +2,7 @@
 
 const Hapi = require("hapi");
 const Path = require("path");
+const NodeMailer = require('nodemailer');
 
 const server = new Hapi.Server();
 server.connection({
