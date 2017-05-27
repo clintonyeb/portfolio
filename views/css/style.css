@@ -53,7 +53,7 @@ main h3:nth-of-type(1) {
 }
 
 main h3:nth-of-type(2) {
-    color: var(--default-primary-color);
+    color: var(--primary-text-color);
 }
 
 /*Form*/
@@ -61,8 +61,14 @@ main h3:nth-of-type(2) {
 #submit {
     background-color: var(--default-primary-color);
     color: var(--text-primary-color);
+    position: relative;
+    top:  0;
 }
 
+#submit:hover {
+    background-color: var(--accent-color);
+    box-shadow: 1px 1px 1px var(--primary-text-color), 2px 2px 2px var(--divider-color);
+}
 
 /*Links*/
 
@@ -82,8 +88,8 @@ a:visited {
 }
 
 a:focus {
-    color: var(--accent-color);
-    top: -10px;    
+    color: var(--default-primary-color);
+    top: 0;    
 }
 
 a:hover {
@@ -92,6 +98,6 @@ a:hover {
 }
 
 a:active {
-    color: var(--accent-color);
-    top: -10px;
+    color: var(--default-primary-color);
+    top: 0;
 }
